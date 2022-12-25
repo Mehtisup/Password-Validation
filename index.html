@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Validation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="black">
+<link rel="icon" type="image/x-icon" href="">
+</head>
+<body>
+<div class="content">
+<form action="https://google.com">
+    <label for="user">Username</label><br><br>
+    <input type="text" id="username" placeholder="Username" required><br><br>
+    <label for="pass">Password</label><br><br>
+    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required><br><br><br>
+    <input id="button" type="submit" value="Submit" >
+</form>
+<div id="message">
+    <h2 id="upper" class="invalid">Upper-Case letter</h1>
+    <h2 id="lower" class="invalid">Lower-Case letter</h1>
+    <h2 id="number" class="invalid">Number</h1>
+    <h2 id="length" class="invalid">Lenght</h1>
+</div>
+</div>
+</body>
+</html>
